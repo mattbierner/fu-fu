@@ -1,3 +1,4 @@
+import * as config from "../../config";
 import { selectRandom } from "../../util/choose";
 
 /**
@@ -5,13 +6,13 @@ import { selectRandom } from "../../util/choose";
  */
 export const imagePhraseProvider = new class {
     private choices: readonly string[] = [
-        '<<DICK>>',
-        '<<BLACKFACE>>',
-        '<<DRUNKEN>>',
+        'dick.png',
+        'blackface.png',
     ];
 
     getValue(): string {
-        return selectRandom(this.choices);
+        const image = selectRandom(this.choices);
+        return `${config.homepage}/tweetMedia/${image}`;
     }
 }();
 

@@ -15,6 +15,7 @@ const useStyles = makeStyles<Theme>(theme => ({
         margin: '0.6em 1em',
         padding: 0,
         userSelect: 'none',
+        backgroundColor: 'white',
 
         '& .icon': {
             borderRight: '1px solid lightgray',
