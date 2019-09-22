@@ -7,12 +7,12 @@ const borderRadius = '4px';
 
 const useStyles = makeStyles<Theme>(theme => ({
     component: {
+        margin: '0.6em auto',
         outline: 'none',
         display: 'flex',
         border: '1px solid lightgray',
         alignItems: 'center',
         borderRadius: borderRadius,
-        margin: '0.6em 1em',
         padding: 0,
         userSelect: 'none',
         backgroundColor: 'white',

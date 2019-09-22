@@ -8,9 +8,6 @@ import { LaunchButton } from './LaunchButton';
 
 const useStyles = makeStyles<Theme>(theme => ({
     root: {
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
         flex: 1,
     },
     header: {
